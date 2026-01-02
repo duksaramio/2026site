@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts | Saram Consulting</title>
+    <meta name="description" content="Insights on GxP, AI, and IT consulting for the life sciences.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f5f4ef;
+            --text-color: #000000;
+            --font-serif: "Playfair Display", serif;
+            --font-mono: "Roboto Mono", monospace;
+            --underline-color: rgba(0, 0, 0, 0.15);
+            --underline-hover: rgba(0, 0, 0, 0.4);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-mono);
+            font-size: 14px;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            padding: 60px 40px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 30px;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        nav {
+            display: flex;
+            gap: 32px;
+        }
+
+        nav a {
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 8px;
+            text-decoration-color: var(--underline-color);
+            color: inherit;
+            transition: text-decoration-color 0.2s ease;
+        }
+
+        nav a:hover, nav a.active {
+            text-decoration-color: var(--underline-hover);
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .section-title {
+            margin-bottom: 24px;
+            font-weight: 500;
+        }
+
+        .post-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .post-item {
+            display: flex;
+            gap: 24px;
+            align-items: baseline;
+        }
+
+        .post-date {
+            opacity: 0.5;
+            min-width: 100px;
+        }
+
+        .post-link {
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 4px;
+            text-decoration-color: var(--underline-color);
+            color: inherit;
+            transition: text-decoration-color 0.2s ease;
+        }
+
+        .post-link:hover {
+            text-decoration-color: var(--underline-hover);
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 40px 20px; }
+            header { flex-direction: column; gap: 20px; }
+            .post-item { flex-direction: column; gap: 4px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="/" class="logo">Saram Consulting</a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/posts" class="active">Posts</a>
+            </nav>
+        </header>
+
+        <main>
+            <p class="section-title">Posts</p>
+            <ul class="post-list">
+                <li class="post-item">
+                    <span class="post-date">Jan 02, 2026</span>
+                    <a href="/posts/ai-gxp-future.html" class="post-link">AI and GxP: The Challenge of Validation in a Stochastic World</a>
+                </li>
+            </ul>
+        </main>
+
+        <p style="margin-top: 80px; font-size: 10px; opacity: 0.4;">100% vibe coded using Antigravity</p>
+    </div>
+</body>
+</html>

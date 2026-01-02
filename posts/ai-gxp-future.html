@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI and GxP | Saram Consulting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f5f4ef;
+            --text-color: #000000;
+            --font-serif: "Playfair Display", serif;
+            --font-mono: "Roboto Mono", monospace;
+            --underline-color: rgba(0, 0, 0, 0.15);
+            --underline-hover: rgba(0, 0, 0, 0.4);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-mono);
+            font-size: 14px;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            padding: 60px 40px;
+        }
+
+        .container { max-width: 800px; margin: 0 auto; }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 80px;
+        }
+
+        .logo { font-family: var(--font-serif); font-size: 30px; text-decoration: none; color: inherit; }
+
+        nav { display: flex; gap: 32px; }
+
+        nav a {
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 8px;
+            text-decoration-color: var(--underline-color);
+            color: inherit;
+        }
+
+        article { max-width: 650px; }
+
+        .post-date { opacity: 0.5; margin-bottom: 8px; }
+
+        h1 {
+            font-family: var(--font-serif);
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: 40px;
+        }
+
+        .post-content p { margin-bottom: 24px; }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            text-decoration-color: var(--underline-color);
+            color: inherit;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 40px 20px; }
+            header { flex-direction: column; gap: 20px; }
+            h1 { font-size: 24px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="/" class="logo">Saram Consulting</a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/posts">Posts</a>
+            </nav>
+        </header>
+
+        <article>
+            <p class="post-date">January 02, 2026</p>
+            <h1>AI and GxP: The Challenge of Validation in a Stochastic World</h1>
+            
+            <div class="post-content">
+                <p>As life science companies increasingly look to AI to accelerate drug discovery and optimize clinical trials, a fundamental tension arises: how do we validate systems that are, by nature, probabilistic?</p>
+                <p>Traditional GxP validation is built on the foundation of reproducibility and deterministic outputs. You provide Input A, and you must consistently receive Output B. AI models, particularly generative ones, don't always play by these rules.</p>
+                <p>At Saram Consulting, we believe the path forward isn't about shoehorning AI into old validation frameworks, but evolving our understanding of risk-based compliance. We help companies build robust monitoring and "human-in-the-loop" systems that ensure AI-driven decisions remain safe, effective, and compliant.</p>
+            </div>
+
+            <a href="/posts" class="back-link">← Back to Posts</a>
+        </article>
+
+        <p style="margin-top: 80px; font-size: 10px; opacity: 0.4;">100% vibe coded using Antigravity</p>
+    </div>
+</body>
+</html>
