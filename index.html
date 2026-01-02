@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saram Consulting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f5f4ef;
+            --text-color: #000000;
+            --font-serif: "Playfair Display", serif;
+            --font-mono: "Roboto Mono", monospace;
+            --underline-color: rgba(0, 0, 0, 0.15);
+            --underline-hover: rgba(0, 0, 0, 0.4);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-mono);
+            font-size: 14px;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            padding: 60px 40px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 100px;
+        }
+
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 30px;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            align-items: baseline;
+            gap: 4px;
+        }
+
+        .logo span {
+            font-size: 24px;
+        }
+
+        nav {
+            display: flex;
+            gap: 32px;
+        }
+
+        nav a {
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 8px;
+            text-decoration-color: var(--underline-color);
+            color: inherit;
+            transition: text-decoration-color 0.2s ease;
+        }
+
+        nav a:hover, nav a.active {
+            text-decoration-color: var(--underline-hover);
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+        }
+
+        .hero-text {
+            max-width: 650px;
+        }
+
+        .hero-text p {
+            margin-bottom: 24px;
+        }
+
+        .section-title {
+            margin-bottom: 32px;
+            font-weight: 500;
+        }
+
+        .service-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .service-item {
+            display: flex;
+            align-items: baseline;
+        }
+
+        .service-item::before {
+            content: "— ";
+            margin-right: 12px;
+            opacity: 0.6;
+        }
+
+        .service-link {
+            text-underline-offset: 4px;
+            color: inherit;
+            transition: text-decoration-color 0.2s ease;
+        }
+
+        footer {
+            margin-top: 154px;
+            font-family: var(--font-serif);
+            font-size: 30px;
+            letter-spacing: -0.5px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 40px 20px;
+            }
+            
+            header {
+                flex-direction: column;
+                gap: 24px;
+                margin-bottom: 60px;
+            }
+            
+            nav {
+                width: 100%;
+                justify-content: flex-start;
+                gap: 20px;
+            }
+            
+            footer {
+                margin-top: 80px;
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="/" class="logo">Saram Consulting</a>
+        </header>
+
+        <main>
+            <div class="hero-text">
+                <p>We are a IT consulting company that understand GxP regulations and AI. </p>
+                <p>If you are a life science company, we can help you with your IT needs. </p>
+            </div>
+
+            <div class="open-positions">
+                <p class="section-title">Services</p>
+                <ul class="service-list">
+                    <li class="service-item">Day to Day IT Support</li>
+                    <li class="service-item">IT Audit</li>
+                    <li class="service-item">GxP Compliance</li>
+                    <li class="service-item">Data Migration</li>
+                    <li class="service-item">Data Security</li>
+                    <li class="service-item">Data Backup</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
