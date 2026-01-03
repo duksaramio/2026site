@@ -30,11 +30,12 @@ The site uses two primary font families from Google Fonts:
 
 ## Layout & Spacing
 
-- **Container**: Max-width `900px` (Home/Listings) or `800px` (Posts). Centered.
+- **Stability**: Force a vertical scrollbar using `html { overflow-y: scroll; }` to prevent horizontal layout shifts when moving between pages of different lengths.
+- **Container**: Site-wide max-width `900px`. Centered.
 - **Padding**: `60px 40px` for desktop, `40px 20px` for mobile.
-- **Header**: Flex-baseline layout with `40px` margin-bottom on mobile.
+- **Header**: Flexbox with `justify-content: flex-start` and `gap: 60px` to keep the navigation close to the logo.
 - **Section Spacing**:
-  - `margin-bottom: 40px` (Main Header).
+  - `margin-bottom: 40px` (Main Header, standardized site-wide).
   - `gap: 24px` (Main content sections).
   - `margin-bottom: 8px` (Paragraphs).
   - `gap: 4px` (List items).
@@ -49,6 +50,7 @@ The site uses two primary font families from Google Fonts:
 ### 2. Navigation
 
 - Monospaced, underlined with soft opacity. `32px` gap between links.
+- **Sitemap**: Home (`/`), About (`/about.html`), Posts (`/posts`).
 
 ### 3. Lists (Services/Posts)
 
