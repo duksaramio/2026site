@@ -38,6 +38,8 @@
             box-sizing: border-box;
         }
 
+        html { overflow-y: scroll; }
+
         body {
             background-color: var(--bg-color);
             color: var(--text-color);
@@ -55,8 +57,9 @@
 
         header {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: baseline;
+            gap: 60px;
             margin-bottom: 40px;
         }
 
@@ -171,9 +174,9 @@
         <header>
             <a href="/" class="logo">Saram Consulting</a>
             <nav>
-                <a href="/">Home</a>
+                <a href="/" class="active">Home</a>
                 <a href="/about.html">About</a>
-                <a href="/posts" class="active">Posts</a>
+                <a href="/posts">Posts</a>
             </nav>
         </header>
 

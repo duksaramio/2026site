@@ -35,6 +35,8 @@
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
+        html { overflow-y: scroll; }
+
         body {
             background-color: var(--bg-color);
             color: var(--text-color);
@@ -45,13 +47,14 @@
             padding: 60px 40px;
         }
 
-        .container { max-width: 800px; margin: 0 auto; }
+        .container { max-width: 900px; margin: 0 auto; }
 
         header {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: baseline;
-            margin-bottom: 80px;
+            gap: 60px;
+            margin-bottom: 40px;
         }
 
         .logo { font-family: var(--font-serif); font-size: 30px; text-decoration: none; color: inherit; }

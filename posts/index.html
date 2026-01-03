@@ -24,6 +24,8 @@
             box-sizing: border-box;
         }
 
+        html { overflow-y: scroll; }
+
         body {
             background-color: var(--bg-color);
             color: var(--text-color);
@@ -41,8 +43,9 @@
 
         header {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: baseline;
+            gap: 60px;
             margin-bottom: 40px;
         }
 
