@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ralph Wiggum Technique: Minimalist AI Orchestration | Saram Consulting</title>
+    <meta name="description" content="Why simple Bash loops and PRDs are the future of AI-driven development. Reviewing Matt Pocock's approach to unbundling orchestration.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://saram.io/posts/ralph-wiggum-technique.html">
+    <meta property="og:title" content="The Ralph Wiggum Technique: Minimalist AI Orchestration | Saram Consulting">
+    <meta property="og:description" content="Simple, predictable, and powerful. Learn why a Bash loop might be better than a complex agentic framework.">
+    <meta property="og:image" content="https://saram.io/posts/ralph-wiggum-technique.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://saram.io/posts/ralph-wiggum-technique.html">
+    <meta property="twitter:title" content="The Ralph Wiggum Technique: Minimalist AI Orchestration | Saram Consulting">
+    <meta property="twitter:description" content="Simple, predictable, and powerful. Learn why a Bash loop might be better than a complex agentic framework.">
+    <meta property="twitter:image" content="https://saram.io/posts/ralph-wiggum-technique.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f5f4ef;
+            --text-color: #000000;
+            --font-serif: "Playfair Display", serif;
+            --font-mono: "Roboto Mono", monospace;
+            --underline-color: rgba(0, 0, 0, 0.15);
+            --underline-hover: rgba(0, 0, 0, 0.4);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { overflow-y: scroll; }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-mono);
+            font-size: 14px;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            padding: 60px 40px;
+        }
+
+        .container { max-width: 900px; margin: 0 auto; }
+
+        header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: baseline;
+            gap: 60px;
+            margin-bottom: 40px;
+        }
+
+        .logo { font-family: var(--font-serif); font-size: 30px; text-decoration: none; color: inherit; }
+
+        nav { display: flex; gap: 32px; }
+
+        nav a {
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 8px;
+            text-decoration-color: var(--underline-color);
+            color: inherit;
+        }
+
+        article { max-width: 650px; }
+
+        .post-date { opacity: 0.5; margin-bottom: 8px; }
+
+        h1 {
+            font-family: var(--font-serif);
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: 40px;
+        }
+
+        .post-content p { margin-bottom: 24px; }
+        .post-content h2 { 
+            font-family: var(--font-serif); 
+            font-size: 20px; 
+            font-weight: 400; 
+            margin: 40px 0 20px; 
+        }
+
+        .post-content pre {
+            background: rgba(0,0,0,0.03);
+            padding: 16px;
+            margin-bottom: 24px;
+            overflow-x: auto;
+            border-left: 2px solid var(--underline-color);
+        }
+
+        .post-content code {
+            font-family: var(--font-mono);
+            font-size: 13px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            text-decoration-color: var(--underline-color);
+            color: inherit;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 40px 20px; }
+            header { flex-direction: column; gap: 20px; }
+            h1 { font-size: 24px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="/" class="logo">Saram Consulting</a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/posts">Posts</a>
+            </nav>
+        </header>
+
+        <article>
+            <p class="post-date">January 05, 2026</p>
+            <h1>The Ralph Wiggum Technique: Minimalist AI Orchestration</h1>
+            
+            <div class="post-content">
+                <p>In a world where AI orchestration frameworks are becoming increasingly bloated with "agentic" complexity, Matt Pocock recently highlighted a refreshingly simple approach: <strong>The Ralph Wiggum Technique</strong> (named after a minimalist strategy popularized by Geoffrey Huntley).</p>
+
+                <p>The core philosophy? <strong>Unbundling orchestration.</strong> Instead of building a complex system of semi-autonomous agents that talk to each other in a black box, you use the simplest loop possible to drive an AI tool toward a goal.</p>
+
+                <h2>The Architecture of "Just a Loop"</h2>
+                <p>The technique relies of three pillars: atomic tasks (PRDs), a simple loop, and robust feedback. By breaking a large project into a directory of small, well-defined Markdown files (Product Requirement Documents), you can feed them sequentially into an AI coding tool like Claude Code or Aider.</p>
+
+                <pre><code># The "Purest" Form
+while :; do cat PROMPT.md | npx --yes @sourcegraph/amp ; done</code></pre>
+
+                <p>Or Matt Pocock's pragmatic iteration version:</p>
+
+                <pre><code>for file in backlog/*.md; do
+  claude-code "$file"
+  git add .
+  git commit -m "ralph: completed $file"
+done</code></pre>
+
+                <h2>Why It Works: The Supervisor is the Compiler</h2>
+                <p>The brilliance of this technique is most apparent when working with <strong>TypeScript</strong>. You don't need a "Reviewer Agent" to check the AI's work. The TypeScript compiler and your unit tests act as the ultimate supervisors. If the agent makes a mistake, the loop continues (or the next task fails), providing the agent with the exact error messages it needs to fix itself.</p>
+
+                <h2>Ship While You Sleep</h2>
+                <p>By unbundling orchestration, you regain predictability. You can define a backlog of 20 tasks, start the loop, and go to bed. The agent will churn through each task, committing as it go. It's atomic, it's traceable, and it's incredibly effective.</p>
+
+                <p>Sometimes, the best AI strategy isn't more complexity—it's just a better loop.</p>
+            </div>
+
+            <a href="/posts" class="back-link">← Back to Posts</a>
+        </article>
+
+        <p style="margin-top: 80px; font-size: 10px; opacity: 0.4;">100% vibe coded using Antigravity</p>
+    </div>
+</body>
+</html>
