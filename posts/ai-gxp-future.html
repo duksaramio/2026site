@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI and GxP: The Challenge of Validation | Saram Consulting</title>
-    <meta name="description" content="Explore the tension between probabilistic AI models and deterministic GxP validation. Learn how Saram Consulting evolves compliance for a stochastic world.">
-    
+    <meta name="description"
+        content="Explore the tension between probabilistic AI models and deterministic GxP validation. Learn how Saram Consulting evolves compliance for a stochastic world.">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://saram.io/posts/ai-gxp-future.html">
     <meta property="og:title" content="AI and GxP: The Challenge of Validation | Saram Consulting">
-    <meta property="og:description" content="How do we validate systems that are, by nature, probabilistic? Evolving our understanding of risk-based compliance in life sciences.">
+    <meta property="og:description"
+        content="How do we validate systems that are, by nature, probabilistic? Evolving our understanding of risk-based compliance in life sciences.">
     <meta property="og:image" content="https://saram.io/posts/ai-gxp-validation-og.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://saram.io/posts/ai-gxp-future.html">
     <meta property="twitter:title" content="AI and GxP: The Challenge of Validation | Saram Consulting">
-    <meta property="twitter:description" content="How do we validate systems that are, by nature, probabilistic? Evolving our understanding of risk-based compliance in life sciences.">
+    <meta property="twitter:description"
+        content="How do we validate systems that are, by nature, probabilistic? Evolving our understanding of risk-based compliance in life sciences.">
     <meta property="twitter:image" content="https://saram.io/posts/ai-gxp-validation-og.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
     <style>
         :root {
             --bg-color: #f5f4ef;
@@ -32,9 +38,15 @@
             --underline-hover: rgba(0, 0, 0, 0.4);
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-        html { overflow-y: scroll; }
+        html {
+            overflow-y: scroll;
+        }
 
         body {
             background-color: var(--bg-color);
@@ -46,7 +58,10 @@
             padding: 60px 40px;
         }
 
-        .container { max-width: 900px; margin: 0 auto; }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
 
         header {
             display: flex;
@@ -56,9 +71,17 @@
             margin-bottom: 40px;
         }
 
-        .logo { font-family: var(--font-serif); font-size: 30px; text-decoration: none; color: inherit; }
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 30px;
+            text-decoration: none;
+            color: inherit;
+        }
 
-        nav { display: flex; gap: 32px; }
+        nav {
+            display: flex;
+            gap: 32px;
+        }
 
         nav a {
             text-decoration: underline;
@@ -68,9 +91,14 @@
             color: inherit;
         }
 
-        article { max-width: 650px; }
+        article {
+            max-width: 650px;
+        }
 
-        .post-date { opacity: 0.5; margin-bottom: 8px; }
+        .post-date {
+            opacity: 0.5;
+            margin-bottom: 8px;
+        }
 
         h1 {
             font-family: var(--font-serif);
@@ -80,7 +108,9 @@
             margin-bottom: 40px;
         }
 
-        .post-content p { margin-bottom: 24px; }
+        .post-content p {
+            margin-bottom: 24px;
+        }
 
         .back-link {
             display: inline-block;
@@ -92,12 +122,22 @@
         }
 
         @media (max-width: 768px) {
-            body { padding: 40px 20px; }
-            header { flex-direction: column; gap: 20px; }
-            h1 { font-size: 24px; }
+            body {
+                padding: 40px 20px;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -106,17 +146,25 @@
                 <a href="/">Home</a>
                 <a href="/about.html">About</a>
                 <a href="/posts">Posts</a>
+                <a href="https://github.com/gxpsoft-ai" target="_blank">GitHub</a>
             </nav>
         </header>
 
         <article>
             <p class="post-date">January 02, 2026</p>
             <h1>AI and GxP: The Challenge of Validation in a Stochastic World</h1>
-            
+
             <div class="post-content">
-                <p>As life science companies increasingly look to AI to accelerate drug discovery and optimize clinical trials, a fundamental tension arises: how do we validate systems that are, by nature, probabilistic?</p>
-                <p>Traditional GxP validation is built on the foundation of reproducibility and deterministic outputs. You provide Input A, and you must consistently receive Output B. AI models, particularly generative ones, don't always play by these rules.</p>
-                <p>At Saram Consulting, we believe the path forward isn't about shoehorning AI into old validation frameworks, but evolving our understanding of risk-based compliance. We help companies build robust monitoring and "human-in-the-loop" systems that ensure AI-driven decisions remain safe, effective, and compliant.</p>
+                <p>As life science companies increasingly look to AI to accelerate drug discovery and optimize clinical
+                    trials, a fundamental tension arises: how do we validate systems that are, by nature, probabilistic?
+                </p>
+                <p>Traditional GxP validation is built on the foundation of reproducibility and deterministic outputs.
+                    You provide Input A, and you must consistently receive Output B. AI models, particularly generative
+                    ones, don't always play by these rules.</p>
+                <p>At Saram Consulting, we believe the path forward isn't about shoehorning AI into old validation
+                    frameworks, but evolving our understanding of risk-based compliance. We help companies build robust
+                    monitoring and "human-in-the-loop" systems that ensure AI-driven decisions remain safe, effective,
+                    and compliant.</p>
             </div>
 
             <a href="/posts" class="back-link">← Back to Posts</a>
@@ -125,4 +173,5 @@
         <p style="margin-top: 80px; font-size: 10px; opacity: 0.4;">100% vibe coded using Antigravity</p>
     </div>
 </body>
+
 </html>
